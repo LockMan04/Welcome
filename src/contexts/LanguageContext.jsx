@@ -11,7 +11,7 @@ export const useLanguage = () => {
 };
 
 export const translations = {
-    en: {
+  en: {
     // Navbar
     nav: {
       home: 'Home',
@@ -212,13 +212,13 @@ export const translations = {
       githubDesc: 'Xem các dự án và đóng góp của tôi',
       responseTime: 'Thời gian phản hồi: Thường trong vòng 24 giờ'
     },
-    },
     // Footer
     footer: {
       description: 'Chuyên gia AI tương lai đam mê xây dựng các giải pháp sáng tạo và khám phá những ranh giới của trí tuệ nhân tạo.',
       copyright: 'Bảo lưu mọi quyền.',
       builtWith: 'Được xây dựng với React, Vite, TailwindCSS & Framer Motion'
     }
+  }
 };
 
 export const LanguageProvider = ({ children }) => {
