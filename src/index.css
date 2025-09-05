@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-black text-white px-6 py-3 rounded-2xl font-medium hover:bg-gray-800 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-black text-black px-6 py-3 rounded-2xl font-medium hover:bg-black hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2;
+  }
+  
+  .section-padding {
+    @apply px-4 py-16 md:py-24;
+  }
+  
+  .container {
+    @apply max-w-6xl mx-auto;
+  }
+}
+
+/* Hiệu ứng rung lắc nhẹ nhàng cho THANH TOAN */
+@keyframes violentShake {
+  0% { transform: translateX(0) translateY(0) rotate(0deg) scale(1); }
+  10% { transform: translateX(-3px) translateY(-1px) rotate(-0.5deg) scale(1.01); }
+  20% { transform: translateX(3px) translateY(1px) rotate(0.5deg) scale(0.99); }
+  30% { transform: translateX(-2px) translateY(-0.5px) rotate(-0.3deg) scale(1.005); }
+  40% { transform: translateX(2px) translateY(0.5px) rotate(0.3deg) scale(0.995); }
+  50% { transform: translateX(-1.5px) translateY(-0.3px) rotate(-0.2deg) scale(1.002); }
+  60% { transform: translateX(1.5px) translateY(0.3px) rotate(0.2deg) scale(0.998); }
+  70% { transform: translateX(-1px) translateY(-0.2px) rotate(-0.1deg) scale(1.001); }
+  80% { transform: translateX(1px) translateY(0.2px) rotate(0.1deg) scale(0.999); }
+  90% { transform: translateX(-0.5px) translateY(-0.1px) rotate(-0.05deg) scale(1.0005); }
+  100% { transform: translateX(0) translateY(0) rotate(0deg) scale(1); }
+}
+
+/* Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: none; /* ẩn thanh scrollbar */
+}
+
+/* IE, Edge cũ */
+html {
+  -ms-overflow-style: none;
+}
