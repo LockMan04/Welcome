@@ -13,7 +13,7 @@ const Projects = () => {
       tags: ["Python", "Computer Vision", "Generative AI", "TensorFlow/PyTorch", "React", "API"],
       demoUrl: "https://lockman04.github.io/SavoryAI/",
       codeUrl: "https://github.com/LockMan04/SavoryAI",
-      image: 'public/images/project1.png'
+      image: '/images/project1.png'
     },
     {
       // Ai Agent Meeting
@@ -22,7 +22,7 @@ const Projects = () => {
       tags: ["Python", "CrewAI", "Large Language Models (LLMs)", "LangChain", "Automation"],
       demoUrl: null,
       codeUrl: "https://github.com/LockMan04/AIAgentMeeting",
-      image: "public/images/project2.png"
+      image: "/images/project2.png"
     },
     {
       // Nhận dạng cảm xúc văn bản tiếng Việt
@@ -31,7 +31,7 @@ const Projects = () => {
       tags: ["Python", "NLP", "LSTM", "TensorFlow/Keras", "Scikit-learn"],
       demoUrl: null,
       codeUrl: null,
-      image: "public/images/project3.png"
+      image: "/images/project3.png"
     },
     {
       // Hệ thống nhận diện sản phẩm trong siêu thị
@@ -40,7 +40,7 @@ const Projects = () => {
       tags: ["Python", "TensorFlow/PyTorch", "OpenCV", "CNNs", "Computer Vision"],
       demoUrl: null,
       codeUrl: null,
-      image: "public/images/project4.png"
+      image: "/images/project4.png"
     },
     {
       // Phân loại thư rác
@@ -49,7 +49,7 @@ const Projects = () => {
       tags: ["Python", "NLP", "TensorFlow/Keras", "Scikit-learn", "Pandas"],
       demoUrl: null,
       codeUrl: null,
-      image: "public/images/project5.png"
+      image: "/images/project5.png"
     },
     {
       // Agent Bot Discord
@@ -58,7 +58,7 @@ const Projects = () => {
       tags: ["Python", "Discord API", "Natural Language Processing", "AI", "Agent"],
       demoUrl: null,
       codeUrl: "https://github.com/LockMan04/BotDiscord",
-      image: "public/images/project6.png"
+      image: "/images/project6.png"
     }
   ];
 
