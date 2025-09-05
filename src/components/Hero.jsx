@@ -12,7 +12,9 @@ const Hero = () => {
   };
 
   const downloadCV = () => {
-    const cvPath = language === 'vi' ? '/LaThanhToan-CV-VI.pdf' : '/LaThanhToan-CV-EN.pdf';
+    const cvPath = language === 'vi' 
+      ? `${import.meta.env.BASE_URL}LaThanhToan-CV-VI.pdf` 
+      : `${import.meta.env.BASE_URL}LaThanhToan-CV-EN.pdf`;
     window.open(cvPath, '_blank');
   };
 
